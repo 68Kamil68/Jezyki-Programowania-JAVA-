@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="QuestionArea" layoutX="21.0" layoutY="32.0" prefHeight="107.0" prefWidth="347.0" wrapText="true">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font></TextArea>
+      <ComboBox fx:id="CategoryField" layoutX="406.0" layoutY="120.0" prefWidth="150.0" promptText="Choose Category" />
+      <Button fx:id="Answr1" layoutX="42.0" layoutY="160.0" mnemonicParsing="false" onAction="#checkAnswer" text="ODP A" />
+      <Button fx:id="Answr3" layoutX="42.0" layoutY="215.0" mnemonicParsing="false" onAction="#checkAnswer" text="ODP C" />
+      <Button fx:id="Answr2" layoutX="194.0" layoutY="160.0" mnemonicParsing="false" onAction="#checkAnswer" text="ODP B" />
+      <Button fx:id="Answr4" layoutX="194.0" layoutY="215.0" mnemonicParsing="false" onAction="#checkAnswer" text="ODP D" />
+      <Button layoutX="472.0" layoutY="160.0" mnemonicParsing="false" onAction="#quizSetup" text="Start the test" />
+      <ComboBox fx:id="UserField" layoutX="406.0" layoutY="45.0" prefWidth="150.0" promptText="Choose user" />
+      <Button fx:id="ShowStatsButton" layoutX="461.0" layoutY="80.0" mnemonicParsing="false" onAction="#showUserStats" text="Show Statistics" />
+   </children>
+</Pane>
